@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/questions/{id}', function ($id) {
+    return view('question', ['id' => $id]);
 });

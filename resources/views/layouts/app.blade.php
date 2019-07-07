@@ -9,11 +9,12 @@
         <link href="/css/app.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="container">
-            <h1 class="text-center">
-                <a href="/">qaqa</a>
-            </h1>
-
+        <div class="navbar navbar-dark bg-dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand" href="/">qaqa</a>
+            </div>
+        </div>
+        <div class="container my-4">
             @yield('body')
         </div>
     </body>

@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@listQuestions');
+Route::post('/', 'HomeController@saveQuestion');
 
-Route::get('/questions/{id}', function ($id) {
-    return view('question', ['id' => $id]);
-});
+Route::get('/question/{id}', 'QuestionController@displayQuestion');
+Route::post('/question/{id}', 'QuestionController@saveAnswer');

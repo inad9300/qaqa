@@ -9,8 +9,8 @@ use qaqadb;
 
 create table questions (
     id int unsigned auto_increment primary key,
-    title varchar(100) not null,
-    content varchar(500) not null
+    content varchar(500) not null,
+    time timestamp
 );
 
 create table answers (
